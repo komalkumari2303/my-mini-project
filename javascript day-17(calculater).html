@@ -1,0 +1,200 @@
+<doctype html>
+<html>
+<head>
+<center>    
+<style>
+    #a{
+        display: grid;
+        border: 2px solid black;
+        grid-template-rows:2fr 2fr 2fr 2fr 2fr 2fr;
+        height: 330px;
+        width: 250px;
+        background-color: black;
+    }   
+    .that{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        height:50px;
+    }
+    .box-1{
+        display: grid;
+        grid-template-columns:2fr 2fr 2fr 2fr;
+        height:50px;
+    } 
+    .ok{
+        display: grid;
+        grid-template-columns:2fr 2fr 2fr 2fr;
+        height:50px;
+    } 
+
+    .lol{
+        display: grid;
+        grid-template-columns:2fr 2fr 2fr 2fr;
+        height:50px;
+    } 
+
+    .new{
+        display: grid;
+        grid-template-columns:2fr 2fr 2fr 2fr;
+        height:50px;
+    } 
+    .for{
+        display: grid;
+        grid-template-columns:2fr 2fr 2fr 2fr;
+        height:50px;
+    } 
+    .btn{
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        font-weight: bold;
+    }
+    #display{
+        width: 248px;;
+    }
+    hover.btn.{
+        color: burlywood;
+        
+    }
+
+</style>
+</head>    
+<body>
+<div id="a">
+    
+    <div class="box-1"><input type="text" placeholder="Enter The Number" id="display"></div>
+    
+<div class="box-1">
+<div class="that"><button class="btn" onclick="setac()">AC</button></div>    
+<div class="that"><button class="btn" onclick="setarow()"></button></div>    
+<div class="that"><button class="btn" onclick="setper()">%</button></div>    
+<div class="that"><button class="btn" onclick="setdiv()">/</button></div>    
+</div>
+    
+    
+<div class="box-1">
+<div class="ok"><button class="btn" onclick="setOne()">1</button></div>    
+<div class="ok"><button class="btn" onclick="settwo()">2</button></div>    
+<div class="ok"><button class="btn" onclick="setthree()">3</button></div>    
+<div class="ok"><button class="btn" onclick="setfour()">4</button></div>    
+</div>
+    
+<div class="box-1">
+<div class="lol"><button class="btn" onclick="setfive()">5</button></div>    
+<div class="lol"><button class="btn" onclick="setsix()">6</button></div>    
+<div class="lol"><button class="btn" onclick="setseven()">7</button></div>    
+<div class="lol"><button class="btn" onclick="seteight()">8</button></div>    
+</div>
+    
+    
+<div class="box-1">
+<div class="new"><button class="btn" onclick="setnine()">9</button></div>    
+<div class="new"><button class="btn" onclick="setzero()">0</button></div>    
+<div class="new"><button class="btn" onclick="setdouble()">00</button></div>    
+<div class="new"><button class="btn" onclick="setadd()">+</button></div>    
+</div>
+    
+    
+<div class="box-1">
+<div class="for"><button class="btn" onclick="setsub()">-</button></div>    
+<div class="for"><button class="btn" onclick="setequal()">=</button></div>    
+<div class="for"><button class="btn" onclick="setdot()">.</button></div>    
+<div class="for"><button class="btn" onclick="setmulty()">*</button></div>    
+</div>
+    
+    
+    
+    
+</div> 
+    
+    
+    <script>
+    
+    function setOne()
+        {
+            document.getElementById("display").value +="1";
+        }
+        
+    function settwo()
+        {
+            document.getElementById("display").value +="2";
+        }
+    function setthree()
+        {
+            document.getElementById("display").value +="3";
+        }
+    function setfour()
+        {
+            document.getElementById("display").value +="4";
+        }
+    function setfive()
+        {
+            document.getElementById("display").value +="5";
+        }
+     function setsix()
+        {
+            document.getElementById("display").value +="6";
+        }
+      function setseven()
+        {
+            document.getElementById("display").value +="7";
+        }
+      function seteight()
+        {
+            document.getElementById("display").value +="8";
+        }
+      function setnine()
+        {
+            document.getElementById("display").value +="9";
+        }
+      function setzero()
+        {
+            document.getElementById("display").value +="0";
+        }
+      function setdouble()
+        {
+            document.getElementById("display").value +="00";
+        }
+      function setadd()
+        {
+            document.getElementById("display").value +="+";
+        }
+      function setsub()
+        {
+            document.getElementById("display").value +="-";
+        }
+    function setmulty()
+        {
+            document.getElementById("display").value +="*";
+        }
+    function setdiv()
+        {
+            document.getElementById("display").value +="/";
+        }
+    function setper()
+        {
+            document.getElementById("display").value +="%";
+        }
+    function setdot()
+        {
+            document.getElementById("display").value +=".";
+        }
+     function setequal()
+        {
+           var a= document.getElementById("display").value;
+            document.getElementById("display").value=eval(a);
+        }
+    
+      function setac()
+        {
+            document.getElementById("display").value="";
+            
+        }
+        
+       
+    </script>
+    
+</center>    
+</body>    
+</html>
+</doctype>
